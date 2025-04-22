@@ -2,31 +2,31 @@
 #include "Bicycle.h"
 
 /**
- * @brief Класс MountainBike представляет горный велосипед.
+ * @brief РљР»Р°СЃСЃ MountainBike РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ РіРѕСЂРЅС‹Р№ РІРµР»РѕСЃРёРїРµРґ.
  *
- * Расширяет Bicycle добавлением подвески.
+ * Р Р°СЃС€РёСЂСЏРµС‚ Bicycle РґРѕР±Р°РІР»РµРЅРёРµРј РїРѕРґРІРµСЃРєРё.
  */
 class MountainBike : public Bicycle {
 private:
-    bool hasSuspension;  // Наличие амортизации
+    bool hasSuspension;  // РќР°Р»РёС‡РёРµ Р°РјРѕСЂС‚РёР·Р°С†РёРё
 
 public:
     /**
-     * @brief Конструктор горного велосипеда.
-     * @param brand Название бренда.
-     * @param gears Количество передач.
-     * @param suspension Наличие подвески.
+     * @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РіРѕСЂРЅРѕРіРѕ РІРµР»РѕСЃРёРїРµРґР°.
+     * @param brand РќР°Р·РІР°РЅРёРµ Р±СЂРµРЅРґР°.
+     * @param gears РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµРґР°С‡.
+     * @param suspension РќР°Р»РёС‡РёРµ РїРѕРґРІРµСЃРєРё.
      */
     MountainBike(const std::string& brand, int gears, bool suspension)
         : Bicycle(brand, gears), hasSuspension(suspension) {
     }
 
     /**
-     * @brief Описание горного велосипеда.
+     * @brief РћРїРёСЃР°РЅРёРµ РіРѕСЂРЅРѕРіРѕ РІРµР»РѕСЃРёРїРµРґР°.
      */
     void DescribingVehicle() const override {
-        std::cout << "Горный велосипед " << brand << " с " << gearCount
-            << " передачами и " << (hasSuspension ? "подвеской" : "без подвески")
-            << " готов к поездке." << std::endl;
+        std::cout << "Р“РѕСЂРЅС‹Р№ РІРµР»РѕСЃРёРїРµРґ " << brand << " СЃ " << gearCount
+            << " РїРµСЂРµРґР°С‡Р°РјРё Рё " << (hasSuspension ? "РїРѕРґРІРµСЃРєРѕР№" : "Р±РµР· РїРѕРґРІРµСЃРєРё")
+            << " РіРѕС‚РѕРІ Рє РїРѕРµР·РґРєРµ." << std::endl;
     }
 };

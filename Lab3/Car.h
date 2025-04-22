@@ -1,32 +1,32 @@
-#pragma once
+п»ї#pragma once
 #include "Vehicle.h"
 #include <iostream>
 
 /**
- * @brief Класс Car представляет легковой автомобиль.
+ * @brief РљР»Р°СЃСЃ Car РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ Р»РµРіРєРѕРІРѕР№ Р°РІС‚РѕРјРѕР±РёР»СЊ.
  *
- * Наследует Vehicle и добавляет информацию о мощности двигателя.
+ * РќР°СЃР»РµРґСѓРµС‚ Vehicle Рё РґРѕР±Р°РІР»СЏРµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РјРѕС‰РЅРѕСЃС‚Рё РґРІРёРіР°С‚РµР»СЏ.
  *
  */
 class Car : public Vehicle {
 protected:
-    int horsepower;  // Мощность двигателя
+    int horsepower;  // РњРѕС‰РЅРѕСЃС‚СЊ РґРІРёРіР°С‚РµР»СЏ
 
 public:
     /**
-     * @brief Конструктор автомобиля.
-     * @param brand Название бренда.
-     * @param horsepower Мощность в л.с.
+     * @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р°РІС‚РѕРјРѕР±РёР»СЏ.
+     * @param brand РќР°Р·РІР°РЅРёРµ Р±СЂРµРЅРґР°.
+     * @param horsepower РњРѕС‰РЅРѕСЃС‚СЊ РІ Р».СЃ.
      */
     Car(const std::string& brand, int horsepower)
         : Vehicle(brand), horsepower(horsepower) {
     }
 
     /**
-     * @brief Описание легкового автомобиля.
+     * @brief РћРїРёСЃР°РЅРёРµ Р»РµРіРєРѕРІРѕРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ.
      */
     void DescribingVehicle() const override {
-        std::cout << "Автомобиль " << brand << " запускается с мощностью "
-            << horsepower << " л.с." << std::endl;
+        std::cout << "РђРІС‚РѕРјРѕР±РёР»СЊ " << brand << " Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ СЃ РјРѕС‰РЅРѕСЃС‚СЊСЋ "
+            << horsepower << " Р».СЃ." << std::endl;
     }
 };

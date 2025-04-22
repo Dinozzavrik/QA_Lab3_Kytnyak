@@ -1,31 +1,31 @@
-#pragma once
+п»ї#pragma once
 #include "Vehicle.h"
 #include <iostream>
 
 /**
- * @brief Класс Bicycle представляет велосипед.
+ * @brief РљР»Р°СЃСЃ Bicycle РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ РІРµР»РѕСЃРёРїРµРґ.
  *
- * Наследует Vehicle, не требует топлива.
+ * РќР°СЃР»РµРґСѓРµС‚ Vehicle, РЅРµ С‚СЂРµР±СѓРµС‚ С‚РѕРїР»РёРІР°.
  */
 class Bicycle : public Vehicle {
 protected:
-    int gearCount;  ///< Количество передач
+    int gearCount;  ///< РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµРґР°С‡
 
 public:
     /**
-     * @brief Конструктор велосипеда.
-     * @param brand Название бренда.
-     * @param gears Количество передач.
+     * @brief РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РІРµР»РѕСЃРёРїРµРґР°.
+     * @param brand РќР°Р·РІР°РЅРёРµ Р±СЂРµРЅРґР°.
+     * @param gears РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµРґР°С‡.
      */
     Bicycle(const std::string& brand, int gears)
         : Vehicle(brand), gearCount(gears) {
     }
 
     /**
-     * @brief Описание велосипеда.
+     * @brief РћРїРёСЃР°РЅРёРµ РІРµР»РѕСЃРёРїРµРґР°.
      */
     void DescribingVehicle() const override {
-        std::cout << "Велосипед " << brand << " с " << gearCount
-            << " передачами начинает движение." << std::endl;
+        std::cout << "Р’РµР»РѕСЃРёРїРµРґ " << brand << " СЃ " << gearCount
+            << " РїРµСЂРµРґР°С‡Р°РјРё РЅР°С‡РёРЅР°РµС‚ РґРІРёР¶РµРЅРёРµ." << std::endl;
     }
 };
