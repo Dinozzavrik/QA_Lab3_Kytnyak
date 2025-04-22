@@ -6,7 +6,7 @@
  * @brief Класс Car представляет легковой автомобиль.
  *
  * Наследует Vehicle и добавляет информацию о мощности двигателя.
- *\image html Сar.jpg
+ *\image html car.jpg
  */
 class Car : public Vehicle {
 protected:
