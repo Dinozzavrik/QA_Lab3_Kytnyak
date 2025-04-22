@@ -1,0 +1,11 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$class_vehicle.html" title="Абстрактный базовый класс Vehicle представляет транспортное средство." alt="" coords="5,31,69,57"/>
+<area shape="rect" id="Node000001" href="$class_bicycle.html" title="Класс Bicycle представляет велосипед." alt="" coords="117,5,181,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="83,31,115,23,117,29,85,36"/>
+<area shape="rect" id="Node000003" href="$class_car.html" title="Класс Car представляет легковой автомобиль." alt="" coords="128,56,170,83"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="85,52,128,62,127,67,83,57"/>
+<area shape="rect" id="Node000002" href="$class_mountain_bike.html" title="Класс MountainBike представляет горный велосипед." alt="" coords="229,5,329,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="196,16,229,16,229,21,196,21"/>
+<area shape="rect" id="Node000004" href="$class_electric_car.html" title="Класс ElectricCar представляет электромобиль." alt="" coords="236,56,322,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="185,67,236,67,236,72,185,72"/>
+</map>

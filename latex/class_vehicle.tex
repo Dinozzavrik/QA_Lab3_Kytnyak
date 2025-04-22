@@ -1,0 +1,97 @@
+\doxysection{Класс Vehicle}
+\hypertarget{class_vehicle}{}\label{class_vehicle}\index{Vehicle@{Vehicle}}
+
+
+Абстрактный базовый класс \doxylink{class_vehicle}{Vehicle} представляет транспортное средство.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle.\+h$>$}
+
+
+
+Граф наследования\+:Vehicle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_vehicle__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}} (const std\+::string \&brand)
+\begin{DoxyCompactList}\small\item\em Конструктор базового транспортного средства. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em Получить название бренда. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_vehicle_ac507e7fec09745ff57e008659831d8ed}{Describing\+Vehicle}} () const =0
+\begin{DoxyCompactList}\small\item\em Виртуальный метод описания транспортного средства. \end{DoxyCompactList}\item 
+\Hypertarget{class_vehicle_a87b19c79e53ebbdaded2a6939aabec79}\label{class_vehicle_a87b19c79e53ebbdaded2a6939aabec79} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Vehicle} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vehicle_add84c214bc9c4113d1fa36bef87762d1}\label{class_vehicle_add84c214bc9c4113d1fa36bef87762d1} 
+std\+::string {\bfseries brand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Абстрактный базовый класс \doxylink{class_vehicle}{Vehicle} представляет транспортное средство. 
+
+Данный класс обеспечивает получение информации и описания транспортного средства. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_vehicle_a458d7e13a573d0001351b4df6930b453}\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
+{\footnotesize\ttfamily \label{class_vehicle_a458d7e13a573d0001351b4df6930b453} 
+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{brand}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор базового транспортного средства. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em brand} & Название бренда. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_vehicle_ac507e7fec09745ff57e008659831d8ed}\index{Vehicle@{Vehicle}!DescribingVehicle@{DescribingVehicle}}
+\index{DescribingVehicle@{DescribingVehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{DescribingVehicle()}{DescribingVehicle()}}
+{\footnotesize\ttfamily \label{class_vehicle_ac507e7fec09745ff57e008659831d8ed} 
+virtual void Vehicle\+::\+Describing\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Виртуальный метод описания транспортного средства. 
+
+
+
+Замещается в \mbox{\hyperlink{class_bicycle_abfea0f25d379b719bd35216c26f07919}{Bicycle}}, \mbox{\hyperlink{class_car_a8729dac4a4faee1b49a3bdf6b7089081}{Car}}, \mbox{\hyperlink{class_electric_car_a44fe5f18f4affaa8c52408f02be81a43}{Electric\+Car}} и \mbox{\hyperlink{class_mountain_bike_aaf017e686d576d383c22d0501619c47d}{Mountain\+Bike}}.
+
+\Hypertarget{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2}\index{Vehicle@{Vehicle}!getBrand@{getBrand}}
+\index{getBrand@{getBrand}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getBrand()}{getBrand()}}
+{\footnotesize\ttfamily \label{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2} 
+std\+::string Vehicle\+::get\+Brand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получить название бренда. 
+
+\begin{DoxyReturn}{Возвращает}
+Название бренда. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="Vehicle" name="Vehicle">
+<area shape="rect" id="Node000001" title="Абстрактный базовый класс Vehicle представляет транспортное средство." alt="" coords="81,5,144,32"/>
+<area shape="rect" id="Node000002" href="$class_bicycle.html" title="Класс Bicycle представляет велосипед." alt="" coords="33,80,97,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,47,75,81,71,78,94,44"/>
+<area shape="rect" id="Node000004" href="$class_car.html" title="Класс Car представляет легковой автомобиль." alt="" coords="141,80,183,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,44,156,78,151,81,128,47"/>
+<area shape="rect" id="Node000003" href="$class_mountain_bike.html" title="Класс MountainBike представляет горный велосипед." alt="" coords="5,155,106,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,122,60,155,54,154,59,122"/>
+<area shape="rect" id="Node000005" href="$class_electric_car.html" title="Класс ElectricCar представляет электромобиль." alt="" coords="130,155,216,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="169,122,174,154,168,155,164,122"/>
+</map>

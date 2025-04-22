@@ -1,0 +1,35 @@
+\doxysection{Electric\+Car.\+h}
+\hypertarget{_electric_car_8h_source}{}\label{_electric_car_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Car.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_electric_car_a7f56452698f39ca1a3263d77284ad69b}{ElectricCar}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}{Car}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ batteryCapacity;\ \ \textcolor{comment}{//Ёмкость\ батареи\ в\ кВт·ч}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_electric_car_a7f56452698f39ca1a3263d77284ad69b}{ElectricCar}}(\textcolor{keyword}{const}\ std::string\&\ brand,\ \textcolor{keywordtype}{int}\ horsepower,\ \textcolor{keywordtype}{int}\ battery)}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}{Car}}(brand,\ horsepower),\ batteryCapacity(battery)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_electric_car_a44fe5f18f4affaa8c52408f02be81a43}{DescribingVehicle}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Выводим\ информацию\ о\ запуске}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Электромобиль\ "{}}\ <<\ brand\ <<\ \textcolor{stringliteral}{"{}\ с\ батареей\ "{}}\ <<\ batteryCapacity}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ кВт·ч\ и\ мощностью\ "{}}\ <<\ horsepower}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ л.с.\ запускается\ бесшумно."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Вычисляем\ и\ выводим\ примерное\ время\ работы\ на\ полной\ зарядке}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ time\ =\ \mbox{\hyperlink{class_electric_car_a7e3fbe88864e4a72e99e399ea57fbb7f}{estimateDriveTime}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Примерное\ время\ работы\ на\ полной\ зарядке:\ "{}}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ time\ <<\ \textcolor{stringliteral}{"{}\ часов."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_electric_car_a7e3fbe88864e4a72e99e399ea57fbb7f}{estimateDriveTime}}(\textcolor{keywordtype}{double}\ consumptionRate\ =\ 20.0)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (consumptionRate\ <=\ 0)\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(batteryCapacity)\ /\ consumptionRate;}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \};}
+
+\end{DoxyCode}

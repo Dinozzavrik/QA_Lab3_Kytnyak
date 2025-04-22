@@ -1,0 +1,109 @@
+\doxysection{Класс Bicycle}
+\hypertarget{class_bicycle}{}\label{class_bicycle}\index{Bicycle@{Bicycle}}
+
+
+Класс \doxylink{class_bicycle}{Bicycle} представляет велосипед.  
+
+
+
+
+{\ttfamily \#include $<$Bicycle.\+h$>$}
+
+
+
+Граф наследования\+:Bicycle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_bicycle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Bicycle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{class_bicycle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}} (const std\+::string \&brand, int gears)
+\begin{DoxyCompactList}\small\item\em Конструктор велосипеда. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bicycle_abfea0f25d379b719bd35216c26f07919}{Describing\+Vehicle}} () const override
+\begin{DoxyCompactList}\small\item\em Описание велосипеда. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}} (const std\+::string \&brand)
+\begin{DoxyCompactList}\small\item\em Конструктор базового транспортного средства. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em Получить название бренда. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Vehicle} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802}\label{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802} 
+int {\bfseries gear\+Count}
+\begin{DoxyCompactList}\small\item\em Количество передач \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries brand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \doxylink{class_bicycle}{Bicycle} представляет велосипед. 
+
+Наследует \doxylink{class_vehicle}{Vehicle}, не требует топлива. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_bicycle_ab1c633676c404610cc426a36f52a57a4}\index{Bicycle@{Bicycle}!Bicycle@{Bicycle}}
+\index{Bicycle@{Bicycle}!Bicycle@{Bicycle}}
+\doxysubsubsection{\texorpdfstring{Bicycle()}{Bicycle()}}
+{\footnotesize\ttfamily \label{class_bicycle_ab1c633676c404610cc426a36f52a57a4} 
+Bicycle\+::\+Bicycle (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{brand}{, }\item[{int}]{gears}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор велосипеда. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em brand} & Название бренда. \\
+\hline
+{\em gears} & Количество передач. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_bicycle_abfea0f25d379b719bd35216c26f07919}\index{Bicycle@{Bicycle}!DescribingVehicle@{DescribingVehicle}}
+\index{DescribingVehicle@{DescribingVehicle}!Bicycle@{Bicycle}}
+\doxysubsubsection{\texorpdfstring{DescribingVehicle()}{DescribingVehicle()}}
+{\footnotesize\ttfamily \label{class_bicycle_abfea0f25d379b719bd35216c26f07919} 
+void Bicycle\+::\+Describing\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Описание велосипеда. 
+
+
+
+Замещает \mbox{\hyperlink{class_vehicle_ac507e7fec09745ff57e008659831d8ed}{Vehicle}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_mountain_bike_aaf017e686d576d383c22d0501619c47d}{Mountain\+Bike}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Bicycle.\+h\end{DoxyCompactItemize}

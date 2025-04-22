@@ -1,0 +1,23 @@
+\doxysection{Car.\+h}
+\hypertarget{_car_8h_source}{}\label{_car_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}{Car}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ horsepower;\ \ \textcolor{comment}{//\ Мощность\ двигателя}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}{Car}}(\textcolor{keyword}{const}\ std::string\&\ brand,\ \textcolor{keywordtype}{int}\ horsepower)}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}}(brand),\ horsepower(horsepower)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_car_a8729dac4a4faee1b49a3bdf6b7089081}{DescribingVehicle}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Автомобиль\ "{}}\ <<\ brand\ <<\ \textcolor{stringliteral}{"{}\ запускается\ с\ мощностью\ "{}}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ horsepower\ <<\ \textcolor{stringliteral}{"{}\ л.с."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \};}
+
+\end{DoxyCode}

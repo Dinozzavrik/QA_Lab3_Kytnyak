@@ -1,0 +1,5 @@
+<map id="Car" name="Car">
+<area shape="rect" id="Node000001" title="Класс Car представляет легковой автомобиль." alt="" coords="16,80,58,107"/>
+<area shape="rect" id="Node000002" href="$class_vehicle.html" title="Абстрактный базовый класс Vehicle представляет транспортное средство." alt="" coords="5,5,69,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,48,40,80,34,80,34,48"/>
+</map>

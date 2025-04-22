@@ -1,0 +1,23 @@
+\doxysection{Bicycle.\+h}
+\hypertarget{_bicycle_8h_source}{}\label{_bicycle_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Vehicle.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802}{gearCount}};\ \ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}}(\textcolor{keyword}{const}\ std::string\&\ brand,\ \textcolor{keywordtype}{int}\ gears)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}}(brand),\ \mbox{\hyperlink{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802}{gearCount}}(gears)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bicycle_abfea0f25d379b719bd35216c26f07919}{DescribingVehicle}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Велосипед\ "{}}\ <<\ brand\ <<\ \textcolor{stringliteral}{"{}\ с\ "{}}\ <<\ \mbox{\hyperlink{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802}{gearCount}}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ передачами\ начинает\ движение."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \};}
+
+\end{DoxyCode}

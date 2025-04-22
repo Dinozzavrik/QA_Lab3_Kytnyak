@@ -1,0 +1,23 @@
+\doxysection{Mountain\+Bike.\+h}
+\hypertarget{_mountain_bike_8h_source}{}\label{_mountain_bike_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Bicycle.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mountain_bike_a2c3b95f8abc3d5d3d00dc341c814928c}{MountainBike}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasSuspension;\ \ \textcolor{comment}{//\ Наличие\ амортизации}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_mountain_bike_a2c3b95f8abc3d5d3d00dc341c814928c}{MountainBike}}(\textcolor{keyword}{const}\ std::string\&\ brand,\ \textcolor{keywordtype}{int}\ gears,\ \textcolor{keywordtype}{bool}\ suspension)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}}(brand,\ gears),\ hasSuspension(suspension)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mountain_bike_aaf017e686d576d383c22d0501619c47d}{DescribingVehicle}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Горный\ велосипед\ "{}}\ <<\ brand\ <<\ \textcolor{stringliteral}{"{}\ с\ "{}}\ <<\ \mbox{\hyperlink{class_bicycle_ae358204f9ea3a365334df6a5a0ac0802}{gearCount}}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ передачами\ и\ "{}}\ <<\ (hasSuspension\ ?\ \textcolor{stringliteral}{"{}подвеской"{}}\ :\ \textcolor{stringliteral}{"{}без\ подвески"{}})}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ готов\ к\ поездке."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \};}
+
+\end{DoxyCode}

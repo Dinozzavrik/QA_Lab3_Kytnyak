@@ -1,0 +1,112 @@
+\doxysection{Класс Mountain\+Bike}
+\hypertarget{class_mountain_bike}{}\label{class_mountain_bike}\index{MountainBike@{MountainBike}}
+
+
+Класс \doxylink{class_mountain_bike}{Mountain\+Bike} представляет горный велосипед.  
+
+
+
+
+{\ttfamily \#include $<$Mountain\+Bike.\+h$>$}
+
+
+
+Граф наследования\+:Mountain\+Bike\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_mountain_bike__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Mountain\+Bike\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_mountain_bike__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mountain_bike_a2c3b95f8abc3d5d3d00dc341c814928c}{Mountain\+Bike}} (const std\+::string \&brand, int gears, bool suspension)
+\begin{DoxyCompactList}\small\item\em Конструктор горного велосипеда. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mountain_bike_aaf017e686d576d383c22d0501619c47d}{Describing\+Vehicle}} () const override
+\begin{DoxyCompactList}\small\item\em Описание горного велосипеда. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_bicycle}{Bicycle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bicycle_ab1c633676c404610cc426a36f52a57a4}{Bicycle}} (const std\+::string \&brand, int gears)
+\begin{DoxyCompactList}\small\item\em Конструктор велосипеда. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}} (const std\+::string \&brand)
+\begin{DoxyCompactList}\small\item\em Конструктор базового транспортного средства. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em Получить название бренда. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Vehicle} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_bicycle}{Bicycle}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries gear\+Count}
+\begin{DoxyCompactList}\small\item\em Количество передач \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries brand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \doxylink{class_mountain_bike}{Mountain\+Bike} представляет горный велосипед. 
+
+Расширяет \doxylink{class_bicycle}{Bicycle} добавлением подвески. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_mountain_bike_a2c3b95f8abc3d5d3d00dc341c814928c}\index{MountainBike@{MountainBike}!MountainBike@{MountainBike}}
+\index{MountainBike@{MountainBike}!MountainBike@{MountainBike}}
+\doxysubsubsection{\texorpdfstring{MountainBike()}{MountainBike()}}
+{\footnotesize\ttfamily \label{class_mountain_bike_a2c3b95f8abc3d5d3d00dc341c814928c} 
+Mountain\+Bike\+::\+Mountain\+Bike (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{brand}{, }\item[{int}]{gears}{, }\item[{bool}]{suspension}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор горного велосипеда. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em brand} & Название бренда. \\
+\hline
+{\em gears} & Количество передач. \\
+\hline
+{\em suspension} & Наличие подвески. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_mountain_bike_aaf017e686d576d383c22d0501619c47d}\index{MountainBike@{MountainBike}!DescribingVehicle@{DescribingVehicle}}
+\index{DescribingVehicle@{DescribingVehicle}!MountainBike@{MountainBike}}
+\doxysubsubsection{\texorpdfstring{DescribingVehicle()}{DescribingVehicle()}}
+{\footnotesize\ttfamily \label{class_mountain_bike_aaf017e686d576d383c22d0501619c47d} 
+void Mountain\+Bike\+::\+Describing\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Описание горного велосипеда. 
+
+
+
+Переопределяет метод предка \mbox{\hyperlink{class_bicycle_abfea0f25d379b719bd35216c26f07919}{Bicycle}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Mountain\+Bike.\+h\end{DoxyCompactItemize}

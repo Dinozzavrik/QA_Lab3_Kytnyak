@@ -1,0 +1,109 @@
+\doxysection{Класс Car}
+\hypertarget{class_car}{}\label{class_car}\index{Car@{Car}}
+
+
+Класс \doxylink{class_car}{Car} представляет легковой автомобиль.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+h$>$}
+
+
+
+Граф наследования\+:Car\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_car__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Car\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{class_car__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}{Car}} (const std\+::string \&brand, int horsepower)
+\begin{DoxyCompactList}\small\item\em Конструктор автомобиля. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_car_a8729dac4a4faee1b49a3bdf6b7089081}{Describing\+Vehicle}} () const override
+\begin{DoxyCompactList}\small\item\em Описание легкового автомобиля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vehicle_a458d7e13a573d0001351b4df6930b453}{Vehicle}} (const std\+::string \&brand)
+\begin{DoxyCompactList}\small\item\em Конструктор базового транспортного средства. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vehicle_acfd85269d99c0006ea34222c5b1e44e2}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em Получить название бренда. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Vehicle} ()=default
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_car_a3c2017edfa876cd9055e3ccf4ce987d5}\label{class_car_a3c2017edfa876cd9055e3ccf4ce987d5} 
+int {\bfseries horsepower}
+\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные унаследованные от \mbox{\hyperlink{class_vehicle}{Vehicle}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries brand}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \doxylink{class_car}{Car} представляет легковой автомобиль. 
+
+Наследует \doxylink{class_vehicle}{Vehicle} и добавляет информацию о мощности двигателя.  
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52}\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily \label{class_car_a4a45fe239ca7b1d3b8fadcf597b8bc52} 
+Car\+::\+Car (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{brand}{, }\item[{int}]{horsepower}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор автомобиля. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em brand} & Название бренда. \\
+\hline
+{\em horsepower} & Мощность в л.\+с. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_car_a8729dac4a4faee1b49a3bdf6b7089081}\index{Car@{Car}!DescribingVehicle@{DescribingVehicle}}
+\index{DescribingVehicle@{DescribingVehicle}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{DescribingVehicle()}{DescribingVehicle()}}
+{\footnotesize\ttfamily \label{class_car_a8729dac4a4faee1b49a3bdf6b7089081} 
+void Car\+::\+Describing\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Описание легкового автомобиля. 
+
+
+
+Замещает \mbox{\hyperlink{class_vehicle_ac507e7fec09745ff57e008659831d8ed}{Vehicle}}.
+
+
+
+Переопределяется в \mbox{\hyperlink{class_electric_car_a44fe5f18f4affaa8c52408f02be81a43}{Electric\+Car}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Car.\+h\end{DoxyCompactItemize}
