@@ -23,6 +23,13 @@
   $(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -286,8 +293,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>brand</b></td>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Время в часах, на которое хватает заряда батареи.</dd></dl>
 <p>Это значение вычисляется по формуле:   </p><p class="formulaDsp">
-<picture><source srcset="form_0_dark.png" media="(prefers-color-scheme: dark)"/><img class="formulaDsp" alt="\[\text{Время работы (часы)} = \frac{\text{Ёмкость батареи (кВт·ч)}}{\text{Потребление (кВт·ч/ч)}}
-\]" src="form_0.png"/></picture>
+\[\text{Время работы (часы)} = \frac{\text{Ёмкость батареи (кВт·ч)}}{\text{Потребление (кВт·ч/ч)}}
+\]
 </p>
  
 </div>
